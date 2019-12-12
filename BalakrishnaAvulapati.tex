@@ -1,172 +1,116 @@
-\documentclass[a4paper,10pt]{article}
-%-----------------------------------------------------------
-\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
-\usepackage{graphicx}
-\usepackage{url}
-\usepackage{palatino}
-\usepackage{tabularx}
-\usepackage{hyperref}
-\fontfamily{SansSerif}
-\selectfont
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
 
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
 
-\usepackage{color}
-\definecolor{mygrey}{gray}{0.75}
-\textheight=9.75in
-\raggedbottom
+% For mathematical symbols
+\usepackage{amsmath}
 
-\setlength{\tabcolsep}{0in}
-\newcommand{\isep}{-2 pt}
-\newcommand{\lsep}{-0.5cm}
-\newcommand{\psep}{-0.6cm}
-\renewcommand{\labelitemii}{$\circ$}
-
-\pagestyle{empty}
-\usepackage{tabu}
-%-----------------------------------------------------------
-%Custom commands
-\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
-\newcommand{\ressubheading}[3]{
-\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
-	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
-\end{tabular*}\vspace{-8pt}}
-%-----------------------------------------------------------
+% Set applicant's personal data for header
+\name{Balakrishna Avulapati}
+\address{003 Vidhya Residency, Kundanahalli \linebreak Karnataka 560066}
+\contacts{8050890586 \linebreak bavulapati@gmail.com \linebreak github.com/bavulapati}
 
 \begin{document}
 
-\hspace{0.5cm}\\[-0.2cm]
-
-\begin{tabu}  { X[l] X[l] }
-
-    \textbf{Balakrishna Avulapati} & \hspace{5em} Email-id \hspace{1em} : \textbf{\href{mailto:balakrishnaa@outlook.com}{balakrishnaa@outlook.com}} \\
-    M.Tech Computational Mathematics & \hspace{5em} LinkedIn\hspace{1em} : \href{https://in.linkedin.com/in/balakrishnaavulapati}{balakrishnaavulapati} \\
-    National Institute of Technology Karnataka & \hspace{5em} GitHub \hspace{1.4em} : \href{https://github.com/bavulapati}{bavulapati}  \\
-    \textbf{(NITK)}, Surathkal. & \hspace{5em} Mobile No. : \href{tel:+918050890586}{+91 8050890586}\\
-\end{tabu}
-
-\medskip
-
-\resheading{\textbf{OBJECTIVE} }\\[\lsep]
-\begin{itemize}
-    \item \noindent Pursuing career in solving real time problems using my technical skills and education.
-\end{itemize}
-
-\resheading{\textbf{ACADEMIC DETAILS} }\\[\lsep]
-\\ \\
-\indent \begin{tabular}{ l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l }
-    \hline
-    \textbf{Examination} & \textbf{Specialization} & \textbf{University} & \textbf{Institute} & \textbf{Year} & \textbf{GPA/\%} \\
-    \hline
-    M.Tech & \textit{Computational Mathematics} & NIT Karnataka & NIT Karnataka & 2016 & 7.89 \\
-    B.Tech & \textit{Computer Science and Engineering} & GPREC Kurnool & SKU Anantapur & 2013 & 7.28\\
-    IPE (XII) & \textit{Mathematics Physics Chemistry} & BIE AP & Narayana Jr. College AP & 2009 & 94.6\\
-    SSC (X) & \textit{Mathematics Social Science} & BSE AP & Bala Sai High School AP & 2007 & 87.3\\
-    \hline
-\end{tabular}
-
-\medskip
-
-\resheading{\textbf{CAREER SUMMARY} }\\[\lsep]
-\begin{itemize} \itemsep \isep
-    \item \noindent Working as a Programmer Analyst for IDrive Software (India) Pvt Ltd, Bangalore since July 2016.
-    \item \noindent College Student Intern at EMC ICoE, Bangalore (May 2015 – May 2016)
-    \item \noindent Intern at Quadrivium Software Pvt. Ltd. Hyderabad (October 2012 – May 2013)
-\end{itemize}
-
-\resheading{\textbf{FIELDS OF INTEREST} }\\[\lsep]
-\begin{itemize}
-    \item \noindent Mobile Application Development, Machine Learning and Theoretical Computer Science.
-\end{itemize}
-
-\resheading{\textbf{TECHNICAL SKILLS} }\\[\lsep]
-\begin{itemize}
-    \item \noindent \textbf{Languages} (C, C\#, Java),\textbf{Database} (MySQL), \textbf{Web Services} (REST, SOAP), \textbf{Tools} (Intellij, Visual Studio),
-    \textbf{DevKits} (Android SDK). 
-\end{itemize}
-
-\resheading{\textbf{WORK EXPERIENCE} }\\[\lsep]
-\begin{itemize}
-
-    \item \textbf{Project: Encoding and Decoding optimization for RemotePC product} \\
-    \emph{(Company: IDrive Software (India) Pvt Ltd.\textbf{July’2017 - Present} , Bangalore)} \\[-0.6cm] 
-	\begin{itemize}\itemsep \isep
+	% Print the header
+	\makeheader
 	
-	    \item Description : RemotePC captures the screen and transfers the screen to remote computer. It also encodes and decodes the screen.
-	    \item Studied and analyzed the encoding algorithms like Tight encoding, H265, H264. And made the proof of concept.
-	    \item Studied and analyzed hardware acceleration feasibility and worked on it.
-
-	\end{itemize}
+	% Print the content
+	\begin{cvsection}{Skills}
+		\begin{cvsubsection}{}{}{}	
+		    \begin{tabular}{ l c r }
+                Proficient & : & Node.js, C/C++, TypeScript, Electron.js, Git, Linux. \\
+                Familiar & : & C\#, MySQL, AWS, HTML, CSS. \\
+                Tools & : & Visual Studio Code, GitLab, Docker, TSLint. \\
+            \end{tabular}
+% 			\begin{itemize}
+% 				\item Proficient\quad:\quad Node.js, C/C++, TypeScript, Electron.js, Git, Linux.
+% 				\item Familiar\qquad:\quad C\#, MySQL, AWS, HTML, CSS. 
+% 				\item Tools\qquad:\quad Visual Studio Code, GitLab, Docker, TSLint.
+% 			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
 	
-    \item \textbf{Project: Remote Data feature for RemotePC product} \\
-    \emph{(Company: IDrive Software (India) Pvt Ltd.\textbf{July’2016 - June’2017} , Bangalore)} \\[-0.6cm] 
-	\begin{itemize}\itemsep \isep
+	\begin{cvsection}{Education}
+    \begin{cvsubsection}{}{}{}	
+    	\indent \begin{tabular}{ l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l }
+        \textbf{Examination} & \textbf{Specialization} & \textbf{University} & \textbf{Institute} & \textbf{Year} & \textbf{CGPA} \\
+        
+        M.Tech & \textit{Computational Mathematics} & NIT Karnataka & NIT Karnataka & 2016 & 7.89 \\
+        B.Tech & \textit{Computer Science and Engineering} & GPREC Kurnool & SKU Anantapur & 2013 & 7.28\\
+        IPE (XII) & \textit{Mathematics Physics Chemistry} & BIE AP & Narayana Jr. College & 2009 & 94.6\\
+        SSC (X) & \textit{Mathematics Social Science} & BSE AP & Bala Sai High School & 2007 & 87.3\\
+        
+    \end{tabular}
+    \end{cvsubsection}
+    \end{cvsection}
+    
+	\begin{cvsection}{Employment}
+		\begin{cvsubsection}{Programmer Analyst}{IDrive Software India}{Feb 2017 - Present}
+			RemotePC - Lets you access your computer from anywhere, anytime.
+			\begin{itemize}
+				\item Working on RemotePC application using \textit{Node.js}, Electron.js, C/C++ and \textit{TypeScript}.
+				\item Mentoring junior team members and involved in Team building activities.
+				\item Implemented Signaling server using Socket.io and MySQL for WebRTC based IDrive BMR Cloud Manage.
+				\item Deployed the CoTURN server on AWS and maintained it.
+				\item Implemented and published Native node module using C/C++, N-API for X display related operations.
+				\item Implemented automatic update of desktop application feature via daemon using Node.js.
+				% \item Implemented \textit{WebRTC} solution for Remote desktop access leveraging Socket.IO, Electron.js and Node.js.
+				\item Increased the rendering frame rate from 10 to 45 by writing a H264 video player leveraging HTML5 \textit{Media Source Extension}(MSE) and ISO Base Media File Format specification for fragmented MP4.
+				\item Leveraged knowledge in Node.js, Git, Electron.js, TypeScript, Visual Studio Code, Web Sockets, WebRTC, MSE, MongoDB and REST API.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Trainee Programmer Analyst}{IDrive Software India}{Jul 2016 - Jan 2017}
+			\begin{itemize}
+			\item Implemented Remote data feature consuming REST API for metadata and web sockets for data transfer.
+				\item Reduced the desktop capture time by 80\% by leveraging \textit{DirectX Graphics Interface}.
+				\item Reduced the color space conversion(RGB to YCbCr) time by 30\% by utilizing the DirectX rendering pipeline.
+				\item Reduced the usage of CPU usage of encoding/decoding(H264) by 80\% by delegating the task to GPU via \textit{hardware acceleration} code.
+				\item Leveraged knowledge in C/C++, Visual Studio, DirectX and Windows SDK.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Software Engineer, Intern}{DELL EMC}{May 2015 – May 2016}
+			RSA Archer eGRC		
+			\begin{itemize}
+				\item Redesigned the \textit{REST API} test automation suite using \textit{Java} and \textit{JUnit} which reduced the test time by 40\%.
+				\item The new framework takes excel sheet provided by manual testing team.
+				\item Scheduled the reporting of the test results using \textit{Jenkins}.
+				\item Leveraged knowledge in Java, Eclipse, GRC (Governance, risk management and compliance) and Jenkins
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
 	
-	    \item Description : Remote Data feature enables user to explore, see and download the  files on host computer with and android mobile.
-	    \item Developed the UI consuming the REST API. Used Fragments, services and  broadcast receivers.
-	    \item Coordinated with the windows and Mac teams in developing the remote data feature.
-        \item Used Android NDK for reusing the FFmpeg native library for decoding the H.264 frames received from host computer.
-
-	\end{itemize}
-\end{itemize}
-
-\resheading{\textbf{INTERNSHIPS} }\\[\lsep]
-\begin{itemize}
-    \item \textbf{Project : API Automation Framework for RSA Archer eGRC product.} (M. Tech. Internship) \\
-    \emph{(Company : EMC ICoE, Bangalore.May'15 – May'16)} \\[-0.6cm]
-	\begin{itemize}\itemsep \isep
+	\begin{cvsection}{Awards and Accomplishments}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+			\item Coordinated the internships for Computational Mathematics in the second semester.
+			\item Secured AIR 1195 in GATE (Computer Science) 2014.
+            \item Completed 5K run at Zinnov run 2015 , Shree Kanteerava Stadium, Bangalore.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
 	
-	    \item Description : To automate the testing process of the REST API of Archer and publish the results at scheduled time.
-	    \item Studied about REST API, implemented the framework in Java and coordinated with the testers to model the input(Excel sheet) and outputs(JUnit xml). \item Provided a GUI for them to write new test cases which stores them in an Excel sheet.
-	    \item Used the JUnit output format to store the results and used Jenkins%(which maintains the results in DB and shows the results as graphs and pie charts)%
-	    to schedule and publish the results
-	
-	\end{itemize}
-	
-	\item \textbf{Project : IBodha.} (B. Tech. Internship) \\
-    \emph{(Company : Quadrivium Software Pvt. Ltd, Hyderabad.Oct'12 – May'13)} \\[-0.6cm]
-	\begin{itemize}\itemsep \isep
-	
-	    \item Description : IBodha brings together some of the best teachers, subject matter experts, professors, and researchers in the business, along with a host of other professionals
-	    \item Understood the software development life cycle and the enterprise development.
-	    \item Used JSF, Java, MySQL, SVN.
-	    
-    \end{itemize}
-
-\end{itemize}
-
-%\bigskip
-%\bigskip
-
-\resheading{\textbf{ACCOMPLISHMENTS} }\\[\lsep]
-\begin{itemize} \itemsep \isep
-    \item Secured AIR 1195 in GATE (CSE) 2014.
-    \item Qualified the JEE and was in Extended Merit List in 2009.
-    \item Rewarded by Dena Bank for securing 1st position in the school in 7th standard.
-    \item Completed 5K run at Zinnov run 2015 , Shree Kanteerava Stadium, Bangalore.
-\end{itemize}
-
-\resheading{\textbf{CO-CURRICULAR ACTIVITIES} }\\[\lsep]
-\begin{itemize} \itemsep \isep
-    \item Volunteer teacher for the school adopted by RSA, Bangalore.
-    \item Coordinated the internships for CMA in the 2nd semester.
-    \item Hosted a stall in the Jignasa2011, a cultural and tech fest of GPREC, Kurnool.
-    \item Presented a seminar on Haptics, science of applying touch.
-\end{itemize}
-
-\resheading{\textbf{STRENGTHS} }\\[\lsep]
-\begin{itemize}
-    \item \noindent Positive Attitude, Social Interaction, Hardworking.
-\end{itemize}
-
-\resheading{\textbf{INTERESTS AND HOBBIES} }\\[\lsep]
-\begin{itemize}
-    \item \noindent Reading Books about adventures.
-    \item \noindent Swimming and Jogging.
-
-\end{itemize}
-
 \end{document}
-
